@@ -1,0 +1,224 @@
+# ESCOLA-INTEGRAL
+ESCOLA INTEGRAL
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Estadual do Campo Castelo Branco</title>
+    <style>
+        /* Estilos e Cores (Azul e Branco) */
+        :root {
+            --azul-escuro: #003366;
+            --azul-medio: #0056b3;
+            --azul-claro: #e6f0fa;
+            --branco: #ffffff;
+            --cinza-texto: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--azul-claro);
+            color: var(--cinza-texto);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #d1e3ff;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Cartões de Conteúdo */
+        .card {
+            background: var(--branco);
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--azul-medio);
+        }
+
+        .card h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Listas */
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--azul-medio);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        }
+
+        /* Destaque do Protagonismo */
+        .protagonismo {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            border-left: none;
+            text-align: center;
+        }
+
+        .protagonismo h2 {
+            color: var(--branco);
+            justify-content: center;
+        }
+
+        .horario-tag {
+            display: inline-block;
+            background-color: var(--azul-medio);
+            color: var(--branco);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Tabela de Horários */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--azul-medio);
+            color: var(--branco);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            .card {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Colégio Estadual do Campo Castelo Branco</h1>
+        <p>Ensino Integral • Protagonismo • Aprendizado Dinâmico</p>
+    </header>
+
+    <div class="container">
+
+        <section class="card">
+            <h2>📘 Sobre Nossa Escola</h2>
+            <p>Atuamos no modelo de <strong>Tempo Integral (35 horas semanais)</strong>, oferecendo uma rotina de aprendizado dinâmica e focada na autonomia do estudante.</p>
+            <br>
+            <p><strong>Salas Temáticas e Rotatividade:</strong> Nossas salas são organizadas por disciplinas específicas. A cada troca de aula, os alunos mudam de sala de acordo com a matéria, estimulando a movimentação, o foco e a autonomia.</p>
+        </section>
+
+        <section class="card">
+            <h2>🔬 Estrutura e Laboratórios</h2>
+            <p>Para garantir o aprendizado prático e a inclusão digital, contamos com:</p>
+            <ul>
+                <li><strong>2 Laboratórios de Informática:</strong> Voltados para inclusão digital, pesquisas e desenvolvimento tecnológico.</li>
+                <li><strong>1 Laboratório de Ciências:</strong> Espaço equipado para aulas práticas e experimentos de Biologia, Química e Física.</li>
+            </ul>
+        </section>
+
+        <section class="card protagonismo">
+            <span class="horario-tag">⏰ Todos os dias às 12:00</span>
+            <h2>🌟 Momento do Protagonismo</h2>
+            <p>Espaço diário onde os estudantes assumem o papel principal! Momento dedicado ao desenvolvimento de liderança, trabalho em equipe, organização de projetos e trocas de experiências entre os alunos.</p>
+        </section>
+
+        <section class="card">
+            <h2>📅 Dias de Atendimento Integral</h2>
+            <p>Confira a distribuição dos dias de permanência integral para cada turma:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias da Semana</th>
+                        <th>Turmas em Tempo Integral</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Segundas e Quartas-feiras</strong></td>
+                        <td>Ensino Fundamental</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Terças e Quintas-feiras</strong></td>
+                        <td>Ensino Médio e 9º Ano</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Colégio Estadual do Campo Castelo Branco — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
